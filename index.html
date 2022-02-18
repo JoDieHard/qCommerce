@@ -6,10 +6,22 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Q Commerce</title>
+        <link rel="shortcut icon" href="assets/qc-logo.svg" type="image/x-icon">
+
+        <link rel="preload" href="assets/fonts/Gilroy-Bold.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="assets/fonts/Gilroy-Medium.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="assets/fonts/Gilroy-Light.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="assets/fonts/Gilroy-Regular.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="assets/fonts/Gilroy-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="assets/fonts/Gilroy-Thin.woff2" as="font" type="font/woff2" crossorigin>
+
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://kit.fontawesome.com/4e7c93723f.js" crossorigin="anonymous"></script>
+
     </head>
 
     <body>
-        <nav class="header">
+        <header class="header flexc">
             <div class="container">
 
                 <div class="main-logo">
@@ -19,8 +31,120 @@
                     </a>
                 </div>
 
+                <nav class="nav">
+                    <ul>
+                        <li class="dropdown-item"><a href="#"> Menu Item <i class="fa-solid fa-chevron-down"></i> </a></li>
+                        <li class="dropdown-item"><a href="#"> Menu Item <i class="fa-solid fa-chevron-down"></i> </a></li>
+                        <li class="dropdown-item"><a href="#"> Menu Item <i class="fa-solid fa-chevron-down"></i> </a></li>
+
+                        <li><a href="#"> Menu Item </a></li>
+                    </ul>
+
+                    <div class="user-nav">
+                        <a href="#"><i class="fa-solid fa-user"></i></a>
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </nav>
+
             </div> 
-        </nav>
+        </header>
+
+        <div class="signup flexc">
+            <div class="container flexc">
+
+                <h2>Get 10&percnt; off Sign up today.</h2>
+
+                <div class="form-group flexc">
+                    <form id="email-signup">
+                        <input type="text" id="email" name="email" placeholder="Enter your email address">
+                    </form>
+                    <button type="submit" form="email-signup"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+
+            </div>
+        </div>
+
+        <footer class="footer flexc">
+            <div class="container flexc">
+
+                <div class="footer-section flexc">
+                    <span class="logo"></span>
+                </div>
+                
+                <div class="footer-section flexc">
+                    <h4>QF Commerce</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">New Releases</a></li>
+                        <li><a href="#">Shop All</a></li>
+                        <li><a href="#">Shop By Filter</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section flexc">
+                    <h4>Information</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section flexc">
+                    <h4>Important</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Delivery &amp; Returns</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms &amp; Conditions</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section flexc">
+                    <h4>Get in touch</h4>
+                    <ul>
+                        <li>
+                            <ul class="address">
+                                <li>Address Line Here</li>
+                                <li>Address Line Here</li>
+                                <li>Address Line Here</li>
+                                <li>Address Line Here</li>
+                            </ul>
+                        </li>
+                    </br>
+                        <li class="contact-link"><a href="tel:01234567890">01234 567890</a></li>
+                        <li class="contact-link"><a href="mailto:hello@qfcommere.com">hello&commat;qfcommerce.com</a></li>
+                    </ul>
+                </div>
+
+                <div class="socials flexc">
+                    <div class="container flexc">
+                        <p>&copy; QF Commerce 2022</p>
+
+                        <div class="social-links flexc">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+    <!-- jQuery -->
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+    </script>
 
     </body>
 

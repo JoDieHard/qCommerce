@@ -1,0 +1,161 @@
+footer {
+    background: $grey;
+    height: auto;
+    border-bottom: solid 1px white;
+    overflow: hidden;
+
+    .container {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-start !important;
+        position: relative;
+        height: 100%;
+        width: 1200px;
+        padding: 100px 0px 150px;
+    }
+}
+
+
+.footer-section {
+    flex-direction: column;
+    width: 200px;
+    
+    h4 {
+        margin: 0px 0px 45px;
+        height: 20px;
+        width: 200px;
+        text-align: left;
+        font-weight: 300;
+
+        position: relative;
+
+        &::after {
+            content: " ";
+            display: block;
+            height: 0px;
+            width: 30px;
+            border-bottom: solid 2px white;
+
+            position: absolute;
+            bottom: -25px;
+            left: 0px;
+        }
+        
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
+        width: auto;
+        min-width: 200px;
+        
+        li {
+            text-transform: none;
+            width: 200px;
+        }
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+        margin-right: auto;
+    }
+
+    .address {
+        width: auto;
+
+        li {
+            width: 200px;
+            font-size: .8rem;
+            font-weight: 300;
+            margin-bottom: 3px;
+        }
+    }
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+    
+    a {
+        font-size: .8rem;
+        font-weight: 300;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+
+.contact-link {
+
+    a {
+        text-decoration: underline;
+        font-weight: 700;
+    }
+}
+
+.contact-link:nth-of-type(2) {
+    margin-bottom: 10px;
+}
+
+
+.socials {
+    width: 100vw;
+    position: absolute;
+    bottom: 0px;
+    height: 71px;
+    background: $grey;
+    border-top: solid 1px white;
+
+    .container {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        height: 100%;
+        padding: 0px;
+        // width: 100%;
+        // position: relative;
+
+        p {
+            margin: 0px auto 0px 0px;
+            align-self: center;
+        }
+
+        .social-links {
+            width: auto;
+            height: 100%;
+            background: red;
+            justify-content: flex-start;
+            font-size: 1.5rem;
+            padding: 0px 50px;
+
+            position: relative;
+            // right: 0px;
+
+            a {
+                z-index: 5;
+            }
+
+            a:nth-child(2) {
+                margin: 0px 30px;
+            }
+            
+            a:nth-child(1) {
+                margin-left: auto;
+            }
+
+            &::after {
+                content: " ";
+                width: 450px;
+                height: 71px;
+                position: absolute;
+                left: 0px;
+                background: white;
+                z-index: 1;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,65 @@
+
+//Global Variables
+
+$black: #141414;
+$grey: #f8f8f7;
+$white: #fdfdfc;
+
+
+// Layout Imports
+@import 'layout/header',
+        'layout/signup',
+        'layout/footer';
+
+
+// Layout Imports
+@import 'partials/fonts';
+
+
+//Fonts 
+
+$primary-font: 'Gilroy';
+
+
+//Global Styles 
+* {
+    box-sizing: border-box;
+    font-family: $primary-font;
+    // font-weight: 300;
+    font-style: normal;
+}
+
+a, *:link *:visited {
+    color: $black;
+    text-decoration: none;
+}
+
+body, html {
+    margin: 0;
+}
+
+.flexc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 1000px;
+    margin: 0px auto;
+}
+
+
+.logo  {
+    background: url('../assets/qc-logo.svg');
+    background-size: contain;
+    background-repeat: no-repeat no-repeat;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    // aspect-ratio: 1 / 1.2;
+}
+
+
+
+

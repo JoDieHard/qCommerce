@@ -1,0 +1,353 @@
+.header {
+  width: 100%;
+  height: auto;
+  background: #f8f8f7;
+  height: 80px;
+}
+
+.header .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+}
+
+.header nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.header nav .user-nav {
+  margin-left: 30px;
+}
+
+.header nav .user-nav a:nth-of-type(even) {
+  margin-left: 20px;
+}
+
+.header nav .user-nav a:nth-of-type(odd) {
+  margin-left: 20px;
+}
+
+.main-logo {
+  margin: 0px auto 0px 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.main-logo a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: .9rem;
+}
+
+li, ul {
+  list-style-type: none;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 550px;
+}
+
+ul li a {
+  font-size: .9rem;
+  font-weight: 300;
+  letter-spacing: .3px;
+}
+
+ul li i {
+  margin-left: 10px;
+  font-size: .75rem;
+}
+
+.signup {
+  background: #141414;
+  height: 131px;
+}
+
+.signup .container {
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.signup .container h2 {
+  color: white;
+  margin-right: 50px;
+}
+
+.signup .container .form-group {
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.signup .container .form-group form input, .signup .container .form-group button {
+  height: 54px;
+  border: solid 1px white;
+  border-radius: 4px;
+}
+
+.signup .container .form-group form input {
+  width: 300px;
+  padding: 0px 0px 0px 20px;
+  background: white;
+}
+
+.signup .container .form-group form input::placeholder {
+  color: #141414;
+  opacity: 1;
+  font-size: 1rem;
+}
+
+.signup .container .form-group button {
+  width: 54px;
+  color: white;
+  background: #141414;
+  margin-left: 15px;
+  font-size: 1.1rem;
+}
+
+footer {
+  background: #f8f8f7;
+  height: auto;
+  border-bottom: solid 1px white;
+  overflow: hidden;
+}
+
+footer .container {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start !important;
+  position: relative;
+  height: 100%;
+  width: 1200px;
+  padding: 100px 0px 150px;
+}
+
+.footer-section {
+  flex-direction: column;
+  width: 200px;
+}
+
+.footer-section h4 {
+  margin: 0px 0px 45px;
+  height: 20px;
+  width: 200px;
+  text-align: left;
+  font-weight: 300;
+  position: relative;
+}
+
+.footer-section h4::after {
+  content: " ";
+  display: block;
+  height: 0px;
+  width: 30px;
+  border-bottom: solid 2px white;
+  position: absolute;
+  bottom: -25px;
+  left: 0px;
+}
+
+.footer-section ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  margin: 0px;
+  width: auto;
+  min-width: 200px;
+}
+
+.footer-section ul li {
+  text-transform: none;
+  width: 200px;
+}
+
+.footer-section .logo {
+  width: 50px;
+  height: 50px;
+  margin-right: auto;
+}
+
+.footer-section .address {
+  width: auto;
+}
+
+.footer-section .address li {
+  width: 200px;
+  font-size: .8rem;
+  font-weight: 300;
+  margin-bottom: 3px;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links li a {
+  font-size: .8rem;
+  font-weight: 300;
+}
+
+.footer-links li:hover {
+  text-decoration: underline;
+}
+
+.contact-link a {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.contact-link:nth-of-type(2) {
+  margin-bottom: 10px;
+}
+
+.socials {
+  width: 100vw;
+  position: absolute;
+  bottom: 0px;
+  height: 71px;
+  background: #f8f8f7;
+  border-top: solid 1px white;
+}
+
+.socials .container {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 100%;
+  padding: 0px;
+}
+
+.socials .container p {
+  margin: 0px auto 0px 0px;
+  align-self: center;
+}
+
+.socials .container .social-links {
+  width: auto;
+  height: 100%;
+  background: red;
+  justify-content: flex-start;
+  font-size: 1.5rem;
+  padding: 0px 50px;
+  position: relative;
+}
+
+.socials .container .social-links a {
+  z-index: 5;
+}
+
+.socials .container .social-links a:nth-child(2) {
+  margin: 0px 30px;
+}
+
+.socials .container .social-links a:nth-child(1) {
+  margin-left: auto;
+}
+
+.socials .container .social-links::after {
+  content: " ";
+  width: 450px;
+  height: 71px;
+  position: absolute;
+  left: 0px;
+  background: white;
+  z-index: 1;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../assets/fonts/Gilroy-Bold.woff2") format("woff2"), url("../assets/fonts/Gilroy-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../assets/fonts/Gilroy-Medium.woff2") format("woff2"), url("../assets/fonts/Gilroy-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../assets/fonts/Gilroy-Light.woff2") format("woff2"), url("../assets/fonts/Gilroy-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../assets/fonts/Gilroy-Regular.woff2") format("woff2"), url("../assets/fonts/Gilroy-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../assets/fonts/Gilroy-SemiBold.woff2") format("woff2"), url("../assets/fonts/Gilroy-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../assets/fonts/Gilroy-Thin.woff2") format("woff2"), url("../assets/fonts/Gilroy-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Gilroy";
+  font-style: normal;
+}
+
+a, *:link *:visited {
+  color: #141414;
+  text-decoration: none;
+}
+
+body, html {
+  margin: 0;
+}
+
+.flexc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 1000px;
+  margin: 0px auto;
+}
+
+.logo {
+  background: url("../assets/qc-logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat no-repeat;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
