@@ -121,6 +121,7 @@ footer {
         p {
             margin: 0px auto 0px 0px;
             align-self: center;
+            font-size: .8rem;
         }
 
         .social-links {
@@ -148,7 +149,7 @@ footer {
 
             &::after {
                 content: " ";
-                width: 450px;
+                width: 500px;
                 height: 71px;
                 position: absolute;
                 left: 0px;

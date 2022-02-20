@@ -8,12 +8,12 @@
         <title>Q Commerce</title>
         <link rel="shortcut icon" href="assets/qc-logo.svg" type="image/x-icon">
 
-        <link rel="preload" href="assets/fonts/Gilroy-Bold.woff2" as="font" type="font/woff2" crossorigin>
+        <!-- <link rel="preload" href="assets/fonts/Gilroy-Bold.woff2" as="font" type="font/woff2" crossorigin>
         <link rel="preload" href="assets/fonts/Gilroy-Medium.woff2" as="font" type="font/woff2" crossorigin>
         <link rel="preload" href="assets/fonts/Gilroy-Light.woff2" as="font" type="font/woff2" crossorigin>
         <link rel="preload" href="assets/fonts/Gilroy-Regular.woff2" as="font" type="font/woff2" crossorigin>
         <link rel="preload" href="assets/fonts/Gilroy-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
-        <link rel="preload" href="assets/fonts/Gilroy-Thin.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="assets/fonts/Gilroy-Thin.woff2" as="font" type="font/woff2" crossorigin> -->
 
         <link rel="stylesheet" href="css/styles.css">
         <script src="https://kit.fontawesome.com/4e7c93723f.js" crossorigin="anonymous"></script>
@@ -21,6 +21,7 @@
     </head>
 
     <body>
+        <!-- HEADER SECTION -->
         <header class="header flexc">
             <div class="container">
 
@@ -49,6 +50,150 @@
             </div> 
         </header>
 
+        <!-- BREADCRUMBS LINK SECTION -->
+        <div class="breadcrumb-links">
+            <div class="container">
+                <div class="breadcrumbs">
+                    <a href="#">Breadcrumb</a> <span>&gt;</span> <a href="#">Breadcrumb</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- PRODUCT SECTION -->
+        <div class="product-section">
+            <div class="container flexc">
+
+                <div class="carousel">
+
+                </div>
+
+                <div class="product-info">
+                    <div class="favourite flexc"><i class="fa-solid fa-heart"></i></div>
+                    <h2>Montreal Leather Sofa</h2>
+
+                    <div class="price">
+                        <p>&pound;649.00</p> 
+                        <span>&pound;949.00</span>
+                    </div>
+
+                    <div class="colour">
+                        <div class="colour-selection">
+                            <p>Colour&colon;</p> <p class="selection">Tan</p>
+                        </div>
+
+                        <div class="colour-options">
+                            <button id="Tan"></button>
+                            <button id="Black"></button>
+                            <button id="Grey"></button>
+                        </div>
+                    </div>
+
+                    <div class="size-options">
+                        <select name="size" id="size">
+        
+                            <option value="2 Seater &verbar; 180cm (w) x 80cm (d)">2 Seater &verbar; 180cm (w) x 80cm (d)</option>
+                            <option value="3 Seater &verbar; 240cm (w) x 80cm (d)">3 Seater &verbar; 240cm (w) x 80cm (d)</option>
+                        </select>     
+                        <span class="fa-solid fa-chevron-down flexc"></span>                     
+                    </div>
+
+                    <button class="size-guide-link">Size Guide</button>  
+                    <button class="add-to-basket">Add to Basket</button>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- PRODUCT DETAILS SECTION -->
+        <div class="product-details">
+            <div class="details-nav flexc">
+                <button>Product Description</button>
+                <button class="active">Size Guide</button>
+                <button>Delivery &amp; Returns</button>
+                <button>Reviews</button>
+            </div>
+
+            <div class="container">
+
+                <div class="pd-content" style="display:none;">
+                    <p>Product Description Content Here</p>
+                </div>
+
+                <div class="size-content " style="display:none">
+                    <p>Size Guide Content Here</p>
+                </div>
+
+                <div class="del-content" style="display:none;">
+                    <p>Deliver &amp; Content Here</p>
+                </div>
+
+                <div class="rev-content" style="display:none;">
+                    <p>Review Content Here</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="interested">
+            <div class="container">
+                <div class="top flexc">
+                    <h2>You might also be interested in&hellip;</h2>
+                    <div class="controls flexc">
+                        <button class="left flexc drop-shad"><i class="fa-solid fa-arrow-left"></i></button>
+                        <button class="right flexc drop-shad"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="bottom">
+
+                    <div class="card drop-shad">
+                        <div class="card-img flexc">
+                            <img src="assets/img/bed_2.png" alt="This is an image of a product.">
+                        </div>
+                        <div class="card-info flexl">
+                            <h3>Lorem Ipsum Double Bed</h3>
+                            <p class="price">&pound;649.00</p>
+                            <a href="#" class="flexc">View Item</a>
+                        </div>
+                    </div>
+
+                    <div class="card drop-shad">
+                        <div class="card-img flexc">
+                            <img src="assets/img/sofa_2.png" alt="This is an image of a product.">
+                        </div>
+                        <div class="card-info flexl">
+                            <h3>Lorem Ipsum Double Bed</h3>
+                            <p class="price">&pound;649.00</p>
+                            <a href="#" class="flexc">View Item</a>
+                        </div>
+                    </div>
+
+                    <div class="card drop-shad">
+                        <div class="card-img flexc">
+                            <img src="assets/img/sofa_1.png" alt="This is an image of a product.">
+                        </div>
+                        <div class="card-info flexl">
+                            <h3>Lorem Ipsum Double Bed</h3>
+                            <p class="price">&pound;649.00</p>
+                            <a href="#" class="flexc">View Item</a>
+                        </div>
+                    </div>
+
+                    <div class="card drop-shad">
+                        <div class="card-img flexc">
+                            <img src="assets/img/bed_1.png" alt="This is an image of a product.">
+                        </div>
+                        <div class="card-info flexl">
+                            <h3>Lorem Ipsum Double Bed</h3>
+                            <p class="price">&pound;649.00</p>
+                            <a href="#" class="flexc">View Item</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- SIGN UP SECTION -->
         <div class="signup flexc">
             <div class="container flexc">
 
@@ -64,6 +209,7 @@
             </div>
         </div>
 
+        <!-- FOOTER SECTION -->
         <footer class="footer flexc">
             <div class="container flexc">
 
@@ -145,6 +291,8 @@
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
         crossorigin="anonymous">
     </script>
+
+    <script src="js/validation.js" type="text/javascript"></script>
 
     </body>
 

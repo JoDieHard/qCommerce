@@ -8,6 +8,10 @@ $white: #fdfdfc;
 
 // Layout Imports
 @import 'layout/header',
+        'layout/breadcrumbs',
+        'layout/product-section',
+        'layout/product_details',
+        'layout/interested',
         'layout/signup',
         'layout/footer';
 
@@ -42,6 +46,18 @@ body, html {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.flexl {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.drop-shad {
+    filter: drop-shadow(0px 3px 3px rgba(0,0,0,0.03));
+    -webkit-filter: drop-shadow(0px 3px 3px rgba(0,0,0,0.03));
+    -moz-filter: drop-shadow(0px 3px 3px rgba(0,0,0,0.03));
 }
 
 .container {
