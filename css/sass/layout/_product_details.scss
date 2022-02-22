@@ -19,6 +19,14 @@
             position: relative;
             cursor: pointer;
 
+            color: $black;
+            appearance: none;
+            -webkit-appearance: none;
+
+            &::placeholder {
+                color: $black;
+            }
+
             &:hover {
                 &::after {
                     content: " ";

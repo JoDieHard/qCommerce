@@ -315,6 +315,7 @@ nav ul {
 }
 
 .size-options select {
+  color: #141414;
   width: 270px;
   height: 51px;
   border: solid 1px #e9e9e9;
@@ -322,12 +323,17 @@ nav ul {
   padding-left: 15px;
   margin-bottom: 5px;
   appearance: none;
+  -webkit-appearance: none;
   cursor: pointer;
 }
 
 .size-options select:focus {
   border-color: #ddd;
   outline: none;
+}
+
+.size-options select::placeholder {
+  color: #141414;
 }
 
 .size-options span {
@@ -413,6 +419,13 @@ nav ul {
   border-radius: 0px;
   position: relative;
   cursor: pointer;
+  color: #141414;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.product-details .details-nav button::placeholder {
+  color: #141414;
 }
 
 .product-details .details-nav button:hover::after {
@@ -878,6 +891,12 @@ footer .container {
   font-display: swap;
 }
 
+@media (min-width: 992px) and (max-width: 1260px) {
+  .size-options span {
+    right: 25px;
+  }
+}
+
 @media (max-width: 1260px) {
   .container {
     width: 900px !important;
@@ -975,6 +994,7 @@ footer .container {
     position: absolute;
     width: 100%;
     height: 100%;
+    pointer-events: none;
   }
   .footer .footer-section:first-of-type .logo {
     height: 100%;
@@ -1005,6 +1025,9 @@ footer .container {
   }
   .size-guide-link {
     margin: 0px 0px -10px;
+  }
+  .size-options span {
+    right: 25px;
   }
   .size-content .info {
     transform: scale(0.9);
