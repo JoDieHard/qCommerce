@@ -121,6 +121,12 @@
 }
 
 
-.card:first-of-type, .card:last-of-type {
-    margin: 0px;
+.card:first-of-type {
+    margin-right: 10px;
+    margin-left: 0px;
+}
+
+.card:last-of-type {
+    margin-left: 10px;
+    margin-right: 0px;
 }

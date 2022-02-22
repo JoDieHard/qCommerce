@@ -2,8 +2,12 @@
 //Global Variables
 
 $black: #141414;
+$dark-grey: #9d9d9d;
 $grey: #f8f8f7;
 $white: #fdfdfc;
+
+$error: #e9390d;
+$success: #2ecc71;
 
 
 // Layout Imports
@@ -17,7 +21,10 @@ $white: #fdfdfc;
 
 
 // Layout Imports
-@import 'partials/fonts';
+@import 'partials/fonts',
+        'partials/responsive',
+        'partials/swiperJS',
+        'partials/validation';
 
 
 //Fonts 
@@ -40,6 +47,7 @@ a, *:link *:visited {
 
 body, html {
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 .flexc {

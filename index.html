@@ -15,6 +15,8 @@
         <link rel="preload" href="assets/fonts/Gilroy-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
         <link rel="preload" href="assets/fonts/Gilroy-Thin.woff2" as="font" type="font/woff2" crossorigin> -->
 
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
         <link rel="stylesheet" href="css/styles.css">
         <script src="https://kit.fontawesome.com/4e7c93723f.js" crossorigin="anonymous"></script>
 
@@ -33,17 +35,47 @@
                 </div>
 
                 <nav class="nav">
-                    <ul>
-                        <li class="dropdown-item"><a href="#"> Menu Item <i class="fa-solid fa-chevron-down"></i> </a></li>
-                        <li class="dropdown-item"><a href="#"> Menu Item <i class="fa-solid fa-chevron-down"></i> </a></li>
-                        <li class="dropdown-item"><a href="#"> Menu Item <i class="fa-solid fa-chevron-down"></i> </a></li>
+                    <ul class="nav-group">
+                        <li class="dropdown-item flexc">
+                            <a href="#" class="flexc"> Menu Item <i class="fa-solid fa-chevron-down"></i> </a>
+                            <div class="dropdown">
+                                <ul class="flexc">
+                                    <li><a href="#">Menu Item</a></li>
+                                    <li><a href="#">Menu Item</a></li>
+                                    <li><a href="#">Menu Item</a></li>
+                                </ul>
+                            </div>
+                        </li>
 
-                        <li><a href="#"> Menu Item </a></li>
+                        <li class="dropdown-item flexc">
+                            <a href="#" class="flexc"> Menu Item <i class="fa-solid fa-chevron-down"></i> </a>
+                            <div class="dropdown">
+                                <ul class="flexc">
+                                    <li><a href="#">Menu Item</a></li>
+                                    <li><a href="#">Menu Item</a></li>
+                                    <li><a href="#">Menu Item</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="dropdown-item flexc">
+                            <a href="#" class="flexc"> Menu Item <i class="fa-solid fa-chevron-down"></i> </a>
+                            <div class="dropdown">
+                                <ul class="flexc">
+                                    <li><a href="#">Menu Item</a></li>
+                                    <li><a href="#">Menu Item</a></li>
+                                    <li><a href="#">Menu Item</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="dropdown-item flexc"><a href="#" class="flexc"> Menu Item </a></li>
                     </ul>
 
-                    <div class="user-nav">
+                    <div class="user-nav flexc">
                         <a href="#"><i class="fa-solid fa-user"></i></a>
                         <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a href="#" class="nav-menu-icn flexc"><i class="fa-solid fa-bars"></i></a>
                     </div>
                 </nav>
 
@@ -63,7 +95,48 @@
         <div class="product-section">
             <div class="container flexc">
 
-                <div class="carousel">
+                <div class="carousel-wrapper">
+
+                    <!-- Main Carousel -->
+                    <div class="carousel swiper" id="main-product-swiper">
+                        <!-- Delivery Flash Message -->
+                    <div class="delivery-flash flexc">
+                        <p>Order in the Next <span class="delivery-countdown">&hellip;</span> For Next Day Delivery </p>
+                    </div>
+
+                    <button class="zoom-btn"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+
+                        <!-- Additional Required Wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide flexc"> <div class="swiper-zoom-container"> <img src="assets/img/product_0.png" alt="This is Product Image 0" style="width: auto; height: 100%;" /> </div> </div>
+                            <div class="swiper-slide flexc"> <div class="swiper-zoom-container"> <img src="assets/img/product_5.png" alt="This is Product Image 5" /> </div> </div>
+                            <div class="swiper-slide flexc"> <div class="swiper-zoom-container"> <img src="assets/img/product_4.png" alt="This is Product Image 4" /> </div> </div>
+                            <div class="swiper-slide flexc"> <div class="swiper-zoom-container"> <img src="assets/img/product_1.png" alt="This is Product Image 1" /> </div> </div>
+                            <div class="swiper-slide flexc"> <div class="swiper-zoom-container"> <img src="assets/img/product_2.png" alt="This is Product Image 2" /> </div> </div>
+                            <div class="swiper-slide flexc"> <div class="swiper-zoom-container"> <img src="assets/img/product_3.png" alt="This is Product Image 3" /> </div> </div>
+                        </div>
+    
+                    </div>
+
+
+                    <!-- Navigation Buttons -->
+                    <div class="swiper-button-prev flexc"><i class="fa-solid fa-arrow-left"></i></div>
+                    <div class="swiper-button-next flexc"><i class="fa-solid fa-arrow-right"></i></div>
+                    
+                    <!-- Thumbails -->
+                    <div class="thumbsSwiper swiper">
+                        <!-- Additional Required Wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide flexc"> <img src="assets/img/product_0.png" alt="This is Product Image 0" style="width: auto; height: 100%;" /> </div> 
+                            <div class="swiper-slide flexc"> <img src="assets/img/product_5.png" alt="This is Product Image 5" /> </div> 
+                            <div class="swiper-slide flexc"> <img src="assets/img/product_4.png" alt="This is Product Image 4" /> </div> 
+                            <div class="swiper-slide flexc"> <img src="assets/img/product_1.png" alt="This is Product Image 1" /> </div> 
+                            <div class="swiper-slide flexc"> <img src="assets/img/product_2.png" alt="This is Product Image 2" /> </div>
+                            <div class="swiper-slide flexc"> <img src="assets/img/product_3.png" alt="This is Product Image 3" /> </div> 
+                        </div>
+                      </div> 
 
                 </div>
 
@@ -82,7 +155,7 @@
                         </div>
 
                         <div class="colour-options">
-                            <button id="Tan"></button>
+                            <button class="active" id="Tan"></button>
                             <button id="Black"></button>
                             <button id="Grey"></button>
                         </div>
@@ -97,7 +170,7 @@
                         <span class="fa-solid fa-chevron-down flexc"></span>                     
                     </div>
 
-                    <button class="size-guide-link">Size Guide</button>  
+                    <a href="#pd" class="size-guide-link">Size Guide</a>  
                     <button class="add-to-basket">Add to Basket</button>
 
                 </div>
@@ -106,29 +179,40 @@
         </div>
 
         <!-- PRODUCT DETAILS SECTION -->
-        <div class="product-details">
+        <div class="product-details" id="pd">
             <div class="details-nav flexc">
-                <button>Product Description</button>
-                <button class="active">Size Guide</button>
-                <button>Delivery &amp; Returns</button>
-                <button>Reviews</button>
+                <button class="pd-btn">Product Description</button>
+                <button class="size-btn active">Size Guide</button>
+                <button class="del-btn">Delivery &amp; Returns</button>
+                <button class="rev-btn">Reviews</button>
             </div>
 
-            <div class="container">
+            <div class="container flexc">
 
-                <div class="pd-content" style="display:none;">
+                <div class="pd-content switch-slide">
                     <p>Product Description Content Here</p>
                 </div>
 
-                <div class="size-content " style="display:none">
-                    <p>Size Guide Content Here</p>
+                <div class="size-content switch-slide active">
+                    <div class="info">
+                        <ul class="flexl">
+                            <li class="flexc"><span class="bullet flexc">A</span><p>Width&colon; <span>189 cm</span></p></li>
+                            <li class="flexc"><span class="bullet flexc">B</span><p>Depth&colon; <span>98 cm</span></p></li>
+                            <li class="flexc"><span class="bullet flexc">C</span><p>Height under furniture&colon; <span>7 cm</span></p></li>
+                            <li class="flexc"><span class="bullet flexc">D</span><p>Seat Width&colon; <span>141 cm</span></p></li>
+                            <li class="flexc"><span class="bullet flexc">E</span><p>Backrest height&colon; <span>76 cm</span></p></li>
+                        </ul>
+                    </div>
+
+                    <div class="info-img"> <img src="assets/img/sofa_info.png" alt="Montreal Leather Sofa Diagram with details."> </div>
                 </div>
 
-                <div class="del-content" style="display:none;">
+                <div class="del-content switch-slide">
                     <p>Deliver &amp; Content Here</p>
+                    
                 </div>
 
-                <div class="rev-content" style="display:none;">
+                <div class="rev-content switch-slide">
                     <p>Review Content Here</p>
                 </div>
             </div>
@@ -147,7 +231,7 @@
 
                     <div class="card drop-shad">
                         <div class="card-img flexc">
-                            <img src="assets/img/bed_2.png" alt="This is an image of a product.">
+                            <img src="assets/img/bed_2.png" alt="This is an image of Bed Product 2.">
                         </div>
                         <div class="card-info flexl">
                             <h3>Lorem Ipsum Double Bed</h3>
@@ -158,7 +242,7 @@
 
                     <div class="card drop-shad">
                         <div class="card-img flexc">
-                            <img src="assets/img/sofa_2.png" alt="This is an image of a product.">
+                            <img src="assets/img/sofa_2.png" alt="This is an image of Sofa Product 2.">
                         </div>
                         <div class="card-info flexl">
                             <h3>Lorem Ipsum Double Bed</h3>
@@ -169,7 +253,7 @@
 
                     <div class="card drop-shad">
                         <div class="card-img flexc">
-                            <img src="assets/img/sofa_1.png" alt="This is an image of a product.">
+                            <img src="assets/img/sofa_1.png" alt="This is an image of Sofa Product 1">
                         </div>
                         <div class="card-info flexl">
                             <h3>Lorem Ipsum Double Bed</h3>
@@ -180,7 +264,7 @@
 
                     <div class="card drop-shad">
                         <div class="card-img flexc">
-                            <img src="assets/img/bed_1.png" alt="This is an image of a product.">
+                            <img src="assets/img/bed_1.png" alt="This is an image of Bed Product 1.">
                         </div>
                         <div class="card-info flexl">
                             <h3>Lorem Ipsum Double Bed</h3>
@@ -200,10 +284,22 @@
                 <h2>Get 10&percnt; off Sign up today.</h2>
 
                 <div class="form-group flexc">
-                    <form id="email-signup">
-                        <input type="text" id="email" name="email" placeholder="Enter your email address">
+                    <form action="#" method="POST" id="email-signup" novalidate>
+                        <!-- Success Message -->
+                        <div class="success-msg flexc" style="display: none;"> 
+                            <p>Your Message has been sent!  </p>
+                            <i class="fas fa-times"> </i>       
+                        </div>
+
+                        <div class="form-input">
+                            <input type="email" id="email" name="email" placeholder="Enter your email address">
+                            <i class="fas fa-check-circle success"></i>
+                            <i class="fas fa-exclamation-circle error"></i>
+                            <small class="errorMsg">Error Message</small>
+                        </div>
+
                     </form>
-                    <button type="submit" form="email-signup"><i class="fa-solid fa-chevron-right"></i></button>
+                    <button id="formSubmit" type="submit" form="email-signup"><i class="fa-solid fa-chevron-right"></i></button>
                 </div>
 
             </div>
@@ -263,8 +359,9 @@
                                 <li>Address Line Here</li>
                                 <li>Address Line Here</li>
                             </ul>
+                            <br>
                         </li>
-                    </br>
+                    
                         <li class="contact-link"><a href="tel:01234567890">01234 567890</a></li>
                         <li class="contact-link"><a href="mailto:hello@qfcommere.com">hello&commat;qfcommerce.com</a></li>
                     </ul>
@@ -292,7 +389,18 @@
         crossorigin="anonymous">
     </script>
 
+    <!-- SwiperJS -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+
+    <!-- Validation -->
     <script src="js/validation.js" type="text/javascript"></script>
+
+    <!-- Switch -->
+    <script src="js/switch.js" type="text/javascript"></script>
+
+    <!-- Countdown -->
+    <script src="js/countdown.js" type="text/javascript"></script>
 
     </body>
 

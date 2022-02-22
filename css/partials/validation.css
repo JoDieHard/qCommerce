@@ -1,0 +1,26 @@
+.success-msg {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  cursor: pointer;
+  color: white;
+  text-align: center;
+  background-color: #2ecc71;
+}
+
+.success-msg p {
+  margin-left: auto;
+}
+
+.success-msg i {
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.success-msg:hover {
+  background-color: #3fe484;
+}

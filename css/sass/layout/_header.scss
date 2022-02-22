@@ -24,6 +24,10 @@
         .user-nav {
             margin-left: 30px;
 
+            a:hover {
+                color: $dark-grey;
+            }
+
             a:nth-of-type(even) {
                 margin-left: 20px;
             }
@@ -31,6 +35,18 @@
             a:nth-of-type(odd) {
                 margin-left: 20px;
             }
+
+            // Menu Icon 
+            .nav-menu-icn {
+                display: none;
+                width: 30px;
+                height: 30px;
+
+                i {
+                    font-size: 1.5rem;
+                }
+            }
+            
         }
     }
 }
@@ -67,7 +83,7 @@ ul {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 550px;
+    width: auto;
 
     li {
         a { 
@@ -79,6 +95,89 @@ ul {
         i {
             margin-left: 10px;
             font-size: .75rem;
+        }
+    }
+}
+
+
+
+
+
+//Nav Dropdown
+
+nav ul {
+    padding: 0px;
+    
+}
+
+.dropdown-item {
+    // display: none;
+    width: 160.63px;
+
+    position: relative;
+    padding: 0px;
+
+    a {
+        width: 100%;
+        height: 81px;
+        text-align: center;
+    }
+
+    .dropdown {
+        height: 120px;
+        width: 100%;
+        z-index: 120;
+
+        border-radius: 0% 0% 8px 8px;
+
+
+        display: none;
+        position: absolute;
+        bottom: -116px;
+        left: 0px;
+        // right: 50%;
+
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+        background: $grey;
+        padding: 0px 0px 10px;
+        border-bottom: solid 2px $grey;
+
+        &:hover {
+            display: flex;
+            // background: $dark-grey;
+        }
+
+        ul {
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            width: 100%;
+
+            li a:hover {
+                color: $dark-grey;
+            }
+        }
+    }
+
+    &:hover {
+        background: $white;
+        
+        a {
+            color: $dark-grey;
+        }
+
+        .dropdown {
+            display: flex;
+            background: $white;
+
+            a {
+                color: initial;
+            }
+
+            // flex-direction: row;
         }
     }
 }

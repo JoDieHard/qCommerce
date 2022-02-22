@@ -1,0 +1,111 @@
+
+.carousel {
+    // width: calc(463px - 20px); OLD
+    width: calc(100% - 20px); // Responsive
+    height: 368px; // Needs to be responsive
+    // padding: 0px 10px;
+    // margin-bottom: 10px;
+    border-radius: 7.5px;
+}
+
+    .swiper-zoom-container, .thumbsSwiper .swiper-slide {
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+
+
+
+    // Main Styling 
+
+    .carousel-wrapper {
+        width: 463px; 
+        height: auto;
+        margin-left: -10px;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        position: relative;
+    }
+
+    // Navigation Styling 
+
+    .swiper-button-next, .swiper-button-prev {
+        width: 30px;
+        height: 30px;
+
+        background: white;
+        border: solid 1px $dark-grey;
+        border-radius: 50%;
+
+        top: calc(50% - 60px);
+
+        i {
+            color: $dark-grey;
+            font-size: .8rem;
+            
+        }
+
+        //Override Initial Styling 
+        &::after {
+            content: " ";
+            display: none;
+        }
+    }
+
+    .swiper-button-next {  right: -50px;  }
+    .swiper-button-prev {   left: -50px;  }
+
+
+
+// Thumbanil Styles
+
+.thumbsSwiper {
+
+    // width: 464px; OLD
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 10px 10px 10px;
+    // display: flex;
+  }
+
+  .thumbsSwiper .swiper-slide {
+    // width: 100px !important;
+    height: 108.5px;
+    opacity: 0.4;
+    overflow: hidden;
+    border: solid 3px transparent;
+    border-radius: 7.5px;
+
+    transition: box-shadow .5s ease-in-out;
+
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0);
+
+    img {
+        transition: transform 1s ease-in-out .1s;
+        transform: scale(1.1);
+    }
+
+  }
+
+  .thumbsSwiper .swiper-slide-thumb-active {
+    opacity: 1;
+    border-color: white;
+    border-radius: 7.5px;
+
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.16);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.16);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.16);
+
+    img {
+        transform: scale(1.2);
+    }
+  }

@@ -2,11 +2,13 @@ const validation = function () {
 
     const form = $('form#email-signup');
     const email = $('#email');
+    const successMsg = $('.success-msg');
 
     const rgx = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     let validInputs;
     
     form.on('submit', function(event) {
+        event.preventDefault();
         checkInputs();
     
         if (!validInputs) {
@@ -46,6 +48,9 @@ const validation = function () {
     function setErrorFor(input, msg) {
         const formControl = input.parent();
         const small = formControl.children('.errorMsg');
+
+        // Remove Success Message
+        successMsg.css('display', 'none');
     
         // Add Error Message inside Small 
         small.text(msg);
@@ -68,9 +73,15 @@ const validation = function () {
         // Add Success Class
         formControl.addClass('success');
         formControl.removeClass('error');
+
+        successMsg.css('display', 'flex');
+        console.log('success added')
+
+
     }
     
     //------------------------------------------------------
+
     
     };
     
