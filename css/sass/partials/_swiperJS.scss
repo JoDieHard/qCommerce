@@ -44,6 +44,7 @@
         border-radius: 50%;
 
         top: calc(50% - 60px);
+        // transition: .2s ease-in-out;
 
         i {
             color: $dark-grey;
@@ -55,6 +56,12 @@
         &::after {
             content: " ";
             display: none;
+        }
+
+        //Hover Styling 
+        &:hover {
+            // transform: scale(1.1);
+            background-color: $grey;
         }
     }
 
@@ -88,10 +95,17 @@
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0);
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0);
     -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0);
+    cursor: pointer;
+
+    transition: opacity .2s ease-in-out;
 
     img {
         transition: transform 1s ease-in-out .1s;
         transform: scale(1.1);
+    }
+
+    &:hover {
+        opacity: .8;
     }
 
   }

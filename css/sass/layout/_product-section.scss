@@ -31,11 +31,21 @@
 
         color: $dark-grey;
         opacity: .6;
+        transition: .1s ease-in-out; 
 
+        i {
+           transition: .1s ease-in-out; 
+        }
+        
 
         cursor: pointer;
+
         &:hover {
             opacity: .9;
+
+            i {
+                transform: scale(1.2);
+            }
         }
     }
 }
@@ -137,6 +147,10 @@
         box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.0);
         -webkit-box-shadow: 6px 0px 10px 0px rgba(0,0,0,0.0);
         -moz-box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.0);
+
+        &:hover {
+            opacity: .85;
+        }
     }
 
     button.active {
@@ -230,6 +244,10 @@
     font-size: 1rem;
     letter-spacing: .4px;
     cursor: pointer;
+
+    &:hover {
+        background-color: rgb(50, 50, 50);
+    }
 
 }
 
