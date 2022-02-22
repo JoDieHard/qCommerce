@@ -209,6 +209,11 @@ nav ul {
   transform: scale(1.2);
 }
 
+.product-info.small {
+  display: none;
+  order: -1;
+}
+
 .product-info {
   display: flex;
   flex-direction: column;
@@ -1010,6 +1015,52 @@ footer .container {
   .product-section .container .carousel-wrapper .swiper-button-next {
     right: 30px;
   }
+  .product-info.small {
+    width: 100% !important;
+    display: flex;
+    order: -1;
+    align-items: baseline;
+    padding: 0px 43px;
+  }
+  .product-info.small .favourite {
+    right: 44px;
+  }
+  .product-info.small .price {
+    flex-grow: 2;
+    flex-basis: 100%;
+  }
+  .product-info.small .price, .product-info.small .product-title {
+    flex-grow: 2;
+    flex-basis: 100%;
+  }
+  .product-info {
+    padding: 0px 43px;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .product-info .colour {
+    margin-left: auto;
+    flex-direction: row;
+  }
+  .product-info .size-options {
+    width: 290px;
+    order: -1;
+    margin-top: 31px;
+  }
+  .product-info .size-guide-link {
+    position: absolute;
+    order: -1;
+    top: 100px;
+    left: 55px;
+  }
+  .product-info .add-to-basket {
+    margin: 30px auto 0px;
+    width: 100%;
+  }
+  .product-info .small {
+    display: none;
+  }
   .product-details .details-nav button {
     font-size: .7rem;
     font-weight: 500;
@@ -1066,21 +1117,18 @@ footer .container {
     align-items: center;
   }
   .product-info {
-    align-items: center;
-    padding-right: 0px;
+    padding: 0px;
+    width: 115%;
   }
-  .product-info h2 {
-    padding-right: 55px;
+  .product-info .size-guide-link {
+    left: 15px;
   }
-  .size-guide-link {
-    margin: 0px 0px -10px;
+  .product-info.small {
+    width: 116% !important;
+    padding: 0px;
   }
-  .size-options span {
-    right: 25px;
-  }
-  .size-content .info {
-    transform: scale(0.9);
-    width: 230px;
+  .product-info.small .favourite {
+    right: 0px;
   }
   .carousel-wrapper {
     margin-right: 0px;
@@ -1128,6 +1176,17 @@ footer .container {
   .thumbsSwiper .swiper-wrapper .swiper-slide {
     height: 110px !important;
   }
+  .product-info {
+    width: 100%;
+    padding: 0px 10px;
+  }
+  .product-info.small {
+    width: 100% !important;
+    padding: 0px 10px;
+  }
+  .product-info.small .favourite {
+    right: 10px;
+  }
   .interested .container .bottom {
     justify-content: center;
   }
@@ -1161,6 +1220,18 @@ footer .container {
   }
   .footer-section:first-of-type {
     left: 20px;
+  }
+  .product-info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .product-info .colour {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+  .product-info .size-guide-link {
+    position: initial;
+    margin: 0px auto;
   }
   .product-details {
     height: 100%;
@@ -1226,16 +1297,24 @@ footer .container {
   .product-info h2 {
     height: 35px;
     vertical-align: center;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .product-info .price {
+    margin-bottom: 15px;
   }
 }
 
 @media (max-width: 460px) {
   .delivery-flash p {
     font-size: .5rem;
+  }
+  .product-info {
+    padding: 0px 10px;
   }
   .interested .container .top h2 {
     font-size: 1rem;

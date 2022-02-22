@@ -50,6 +50,12 @@
     }
 }
 
+// SMALL SCREEN SIZES TITLE
+.product-info.small {
+    display: none;
+    order: -1;
+}
+
 .product-info {
     // width: 436px;
     display: flex;
