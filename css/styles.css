@@ -1350,6 +1350,13 @@ footer .container {
   }
 }
 
+@media (max-width: 430px) {
+  .product-section .container .carousel-wrapper .carousel .swiper-wrapper .swiper-slide .swiper-zoom-container img {
+    width: auto;
+    height: 100%;
+  }
+}
+
 @media (max-width: 335px) {
   .product-section .container .carousel-wrapper .carousel {
     height: 300px !important;
